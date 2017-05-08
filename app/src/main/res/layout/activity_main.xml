@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.artinsarkezians.physicsculminating_rev3.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Calculations"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Graphs"
+        android:id="@+id/graphTitle"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="75dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Amplitude:"
+        android:id="@+id/amplitudeTXT"
+        android:layout_marginTop="45dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Magnitude:"
+        android:id="@+id/magnitudeTXT"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Epicentral"
+        android:id="@+id/netaTXT"
+        android:layout_alignTop="@+id/magnitudeTXT"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_marginLeft="85dp"
+        android:layout_marginStart="85dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="0"
+        android:id="@+id/ampVal"
+        android:layout_alignTop="@+id/amplitudeTXT"
+        android:layout_marginLeft="100dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="0"
+        android:id="@+id/magVal"
+        android:layout_alignTop="@+id/magnitudeTXT"
+        android:layout_marginLeft="100dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="0"
+        android:id="@+id/netaVal"
+        android:layout_alignTop="@+id/magnitudeTXT"
+        android:layout_marginLeft="265dp" />
+
+
+    <com.jjoe64.graphview.GraphView
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="130dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/graphNET" />
+
+    <com.jjoe64.graphview.GraphView
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="220dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/graphX" />
+
+    <com.jjoe64.graphview.GraphView
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="310dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/graphY" />
+
+    <com.jjoe64.graphview.GraphView
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="400dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/graphZ" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Net"
+        android:id="@+id/textView9"
+        android:layout_marginTop="155dp"
+        android:layout_marginLeft="0dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="X"
+        android:id="@+id/textView10"
+        android:layout_marginTop="245dp"
+        android:layout_alignRight="@+id/textView9"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Y"
+        android:id="@+id/textView11"
+        android:layout_marginTop="335dp"
+        android:layout_alignRight="@+id/textView9"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Z"
+        android:id="@+id/textView12"
+        android:layout_marginTop="425dp"
+        android:layout_alignRight="@+id/textView9"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Distance:"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/netaTXT"
+        android:layout_alignLeft="@+id/netaTXT"
+        android:layout_alignStart="@+id/netaTXT" />
+
+</RelativeLayout>
